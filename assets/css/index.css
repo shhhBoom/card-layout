@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--grey);
+}
+
+:root {
+    --dark-grey: #4C4E61;
+  --grey: #A3A5AE;
+  --light-grey: #EEEEEE;
+  --red: #EA5353;
+  --cyan: #45D3D3;
+  --orange: #FCAF4A;
+  --blue: #549EF2;
+
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 200;
+    color: var(--dark-grey);
+    margin-bottom: 16px;
+}
+
+h1 span {
+    display: block;
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+p {
+    width: 70%;
+    text-align: center;
+
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey);
+}
+
+main #features {
+    margin-top: 60px;
+}
+
+main #features .card {
+    background-color: white;
+    border-radius: 10px;
+    height: 250px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.278);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+main #features .card h2 {
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+main #features .card p {
+    text-align: left;
+    width: 100%;
+}
+
+main #features .card img {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+main  #features .card::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main  #features .card.supervisor::before {
+    background-color: var(--cyan);
+}
+main  #features .card.team-builder::before {
+    background-color: var(--red);
+}
+main  #features .card.karma::before {
+    background-color: var(--orange);
+}
+main  #features .card.calculator::before {
+    background-color: var(--blue);
+}
+
+main #features, main #features .mid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
