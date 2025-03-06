@@ -107,3 +107,28 @@ main #features, main #features .mid {
     flex-direction: column;
     gap: 40px;
 }
+
+@media only screen and (min-width: 768px) {
+    main h1 {
+        font-size: 32px;
+    }
+
+    main p {
+        width: 50%;
+    }
+    
+    main  #features .card p {
+        width: 100%;
+    }
+
+    main #features {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #features .card {
+        width: 300px;
+        
+    }
+}
