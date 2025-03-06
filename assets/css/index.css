@@ -61,6 +61,32 @@ main #features .card {
     padding: 30px;
     position: relative;
     overflow: hidden;
+    transition: all 0.2s;
+}
+
+main #features .card:hover {
+    cursor: pointer;
+}
+
+main #features .card:hover *, main #features .card p:hover {
+    color: white;
+}
+
+main #features .card.supervisor:hover {
+    background-color: var(--cyan);
+    
+}
+main #features .card.team-builder:hover {
+    background-color: var(--red);
+    
+}
+main #features .card.karma:hover {
+    background-color: var(--orange);
+    
+}
+main #features .card.calculator:hover {
+    background-color: var(--blue);
+    
 }
 
 main #features .card h2 {
@@ -129,6 +155,6 @@ main #features, main #features .mid {
 
     main #features .card {
         width: 300px;
-        
+
     }
 }
